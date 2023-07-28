@@ -1,0 +1,6 @@
+<h1>Word Count</h1>
+<form method="post" action="{% url 'word_count' %}">
+	{% csrf_token %}
+	<textarea name="text" rows="5" cols="40"></textarea><br>
+	<input type="submit" value="Count Word">
+</form>
